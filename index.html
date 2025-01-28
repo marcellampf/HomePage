@@ -20,56 +20,67 @@
         <img src="woman.png" alt="About Icon">
       </div>
       <h3>About</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('About', 'https://example.com/about')">+</div>
     </div>
 
     <div class="card" style="background-color: #9ED2C6;">
       <div class="icon">
-        <img src="stack-of-books.png" alt="About Icon">
+        <img src="stack-of-books.png" alt="Data Analysis Icon">
       </div>
       <h3>Data Analysis Projects</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('Data Analysis Projects', 'https://example.com/data')">+</div>
     </div>
 
     <div class="card" style="background-color: #005F73;">
       <div class="icon">
-        <img src="internet.png" alt="About Icon">
+        <img src="internet.png" alt="Web Icon">
       </div>
       <h3>Web</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('Web', 'https://example.com/web')">+</div>
     </div>
 
     <div class="card" style="background-color: #AE2012;">
       <div class="icon">
-        <img src="snake.png" alt="About Icon">
+        <img src="snake.png" alt="Python Icon">
       </div>
       <h3>Python</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('Python', 'https://example.com/python')">+</div>
     </div>
 
     <div class="card" style="background-color: #EE9B00;">
       <div class="icon">
-        <img src="dashboard.png" alt="About Icon">
+        <img src="dashboard.png" alt="Dashboards Icon">
       </div>
       <h3>Dashboards</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('Dashboards', 'https://example.com/dashboards')">+</div>
     </div>
 
     <div class="card" style="background-color: #E4BBA9;">
       <div class="icon">
-        <img src="sparkling.png" alt="About Icon">
+        <img src="sparkling.png" alt="Pyspark Icon">
       </div>
       <h3>Pyspark</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('Pyspark', 'https://example.com/pyspark')">+</div>
     </div>
 
     <div class="card" style="background-color: #E9D8A6;">
       <div class="icon">
-        <img src="link.png" alt="About Icon">
+        <img src="link.png" alt="Links Icon">
       </div>
       <h3>Links</h3>
-      <div class="plus">+</div>
+      <div class="plus" onclick="openModal('Links', 'https://example.com/links')">+</div>
     </div>
   </main>
+
+  <!-- Modal (Popup) -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">×</span>
+      <h2 id="modal-title"></h2>
+      <a id="modal-link" href="#" target="_blank">Acessar</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
